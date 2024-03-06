@@ -21,7 +21,7 @@ public class ThemeLoader {
         mapper.findAndRegisterModules();
         try {
             ThemeList themeList = mapper.readValue(new File("src/main/resources/application.yaml"), ThemeList.class);
-            return themeList.getThemesAsMap();
+            return themeList.getThemesAsM();
         } catch (IOException e) {
             return Collections.emptyMap();
         }
